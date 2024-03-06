@@ -2,8 +2,9 @@
 
 <html>
   <head>
-  <title> Page Title </title>
-
+  <title> Home </title>
+  <h1> <h/1>
+    <p> Hello </p>
   </head>
 
 </html>
