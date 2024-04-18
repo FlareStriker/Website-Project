@@ -82,13 +82,61 @@ body {
 <! -- A test for form functionality-->
  </p>
 
-<form action="/action_page.php">
+<form action="/add" method = "POST">
+    <fieldset>
+        <h3>Email</h3>
     <label for="email">Enter your email:</label>
-    <input type="email" id="email" name="email">
-    <input type="submit">
+    <input type="text" id="email" name="email" requred>
+    <br>
+    <button type = "reset">Reset</button>
+    <button type = "submit">Submit</button>
+    </fieldset>
 </form>
 
- 
+<form >
+    <form action="/view" method= "POST">
+        <fieldset>
+            <h3>View Email</h3>
+           <label for="email">Email Name:</label>
+            <input type= "text" id="email" name="email" required>
+            <br>
+            <button type = "reset">Reset</button>
+            <button type = "submit">Submit</button>
+            <br>
+        </fieldset>
+</form>
+
+<form action="update" method="POST">
+    <fieldset>
+        <h3>
+            Update an Email
+        </h3>
+        <label for="email">Update Email: </label>
+        <input type= "text" id="email" name="email" required>
+        <br>
+        <label for="email">New Email: </label>
+        <input type= "text" id="email" name="email" required>
+        <br>
+            <button type = "reset">Reset</button>
+            <button type = "submit">Submit</button>
+    </fieldset>
+</form>
+
+<form action=" /delete" method="Post">
+    <fieldset>
+        <h3>
+            Deleting an email
+        </h3>
+        <label for="email">Email Deletion: </label>
+        <input type= "text" id="email" name="email" required>
+        <br>
+        <br>
+            <button type = "reset">Reset</button>
+            <button type = "submit">Submit</button>
+    </fieldset>
+</form>
+
+
   </body>
 
 
