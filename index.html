@@ -20,6 +20,12 @@
 </div>
 
 <style>
+img {
+        border-radius: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+       }
 
 a{
   color: black;
@@ -28,7 +34,7 @@ a{
 
 body {
   font-family: Times New Roman;
-  padding: 25px;
+  padding: 5px;
   
   }
   .navigation{
@@ -62,32 +68,58 @@ body {
     display: flex;
     flex-wrap: wrap;
     
+    align-items: center; 
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+    background-color:#238FDA ;
+    padding-left: 0px;
+    padding-right: 0px;
 
   }
  
-  
+  p{
+    background-color: rgb(36, 147, 238);
+  }
+  .text{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+ 
+
 </style>
 
 
  <body>
 
   <p> 
-  This is the front page of my website. This will have a short gallery of the things I enjoy and will hopefully act as links to other pages.
+  This is the front page of my website. This is just a short bit showing the things I like.
  </p>
 
-  <button type="button"
-  onclick="document.getElementById('demo').innerHTML = Date()">
-  Would you like to know the time?</button>
-
-  
   </body>
 
-  /* Placeholders for when I want to add images*/
   <div class = "column">
-    <div class = "row">
-      <img src = "Gundam1.jpg">
-      <img src = "Code Geass.jpg">
-    </div>
+     
+      <img src = "Gundam1.jpg" width=" 300" height=" 450">
+      <img src = "Zeta Gundam.jpe" width="300" height="450">
+      <img src = "Gundam ZZ.webp" width="300" height="450">
+      <img src = "Gundam Unicorn.jpg" width="300" height="450">
+      <div class = "text">
+      <p>  This is Mobile Suit Gundam. An anime produced in Japan in 1978 that is responsible for revitalizing the mecha genre. At the time, the genre was dying out and it was heading towards
+        a downturn and a potential death of the genre. Ever since, it's been on the rise and thankfully has continued to perpetuate a long standing type of show that I particularly enjoy.
+        The sequels are Zeta Gundam, ZZ Gundam and Gundam Unicorn.
+      </p>
+      </div>
+      <img src = "Code Geass.jpg" width="310" height="450">
+      <img src = "Code Geass R2.jpg" width="320" height="450">
+      <img src = "Code Geass Akito.png" width="350" height="450">
+      <div class = "text">
+        <p>
+          Code Geass: Lelouch of the Rebellion is an anime originally airing in 2007. It was a very popular mecha anime that had a very intricate and detailed plot with a lot of subversions that
+          gave the audience a run for their money. Experiencing the theatre kid gaining a lot of power and influence through his own machinations and with the aid of a witch makes for quite a unique experience with storytelling.
+          It's second season had the same name as the first, adding in R2 to the title. And a side story that was introduced to tell the story in-between called, Akito the Exiled.
+        </p>
+      </div>
   </div>
 
    <div class = "footer">

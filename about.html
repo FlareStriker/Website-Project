@@ -21,6 +21,13 @@
 
 <style>
 
+img {
+        border-radius: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+       }
+
 a{
   color: black;
   text-decoration: underline;
@@ -64,10 +71,31 @@ body {
   .column{
     display: flex;
     flex-wrap: wrap;
-   
+    
+    align-items: center; 
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+    background-color:#238FDA ;
+    padding-left: 0px;
+    padding-right: 0px;
 
   }
- 
+  .text{
+    font-size: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+ .button{
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  background-color:#56a5ec
+ }
  
 </style>
 
@@ -75,7 +103,7 @@ body {
  <body>
 
   <p> Hello! My name is Mikael Mallick. Welcome to my website.
-    This is really just about the things I have an interest in. Things like anime, video games, and writing. Nothing too serious. Later on, this whole page will be filled with images and little explanations about the things I enjoy.
+    This is really just about the things I have an interest in. Things like video games and reading. Nothing too serious. 
  </p>
 
  
@@ -83,10 +111,28 @@ body {
 
 
   <div class = "column">
-    <div class = "row">
-      <img src = "placeholder.jpg">
-      <img src = "placeholder.jpg">
-    </div>
+ 
+      <div class = "text">
+      <img src = "Armored Core 6.jpg" width="600" height="450">
+      <img src = "Granblue.jpg" width="600" height="450">
+      <img src = "SoW.jpg" width="600" height="450">
+      <img src = "LoL.jpg"width="600" height="450">
+      <img src = "HD2.jpg"width="600" height="450">
+      <img src = "FF8.jpg"width="600" height="450">
+
+      <button class="button button1" onclick="alert('The games that I enjoy from left to right, top to bottom are Armored Core 6, Granblue Fantasy ReLink, Symphony of War, League of Legends, Helldivers 2 and Final Fantasy 8.')">Video Games</button>
+    <br>
+
+    
+      <img src = "EAP.jpg"width="500" height="450">
+      <img src = "MilkHoney.jpg"width="450" height="500">
+      <p>
+        
+        <button class="button button1" onclick="alert('The writings of Edgar Allen Poe really spoke to me a lot. I enjoy reading poetry as a past time. Lately I have taken to reading about Rupi Kaur and her works. She is fairly interesting.')">Readings</button>
+        <br>
+      </p>
+      </div>
+ 
   </div>
 
 
